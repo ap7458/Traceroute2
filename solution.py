@@ -5,7 +5,6 @@ import struct
 import time
 import select
 import binascii
-import socket
 
 ICMP_ECHO_REQUEST = 8
 MAX_HOPS = 30
