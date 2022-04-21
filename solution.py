@@ -1,5 +1,4 @@
 from socket import *
-import socket
 import os
 import sys
 import struct
@@ -75,7 +74,7 @@ def get_route(hostname):
 
     for ttl in range(1,MAX_HOPS):
         for tries in range(TRIES):
-            destAddr = socket.gethostbyname(hostname)
+            destAddr = gethostbyname(hostname)
 
             #Fill in start
             # Make a raw socket named mySocket
